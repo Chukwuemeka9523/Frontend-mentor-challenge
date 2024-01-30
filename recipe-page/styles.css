@@ -1,0 +1,129 @@
+:root {
+    /** Primary */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+
+    /** Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'young-serif';
+    src: url(fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'outfit';
+    src: url(fonts/outfit/Outfit-VariableFont_wght.ttf) format('truetype');
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    font-family: 'outfit', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+h1,h2 {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+.intro__content {
+    margin: 2em 0;
+}
+.intro__header {
+    font-family: 'young-serif', sans-serif;
+    color: var(--Dark-Charcoal);
+}
+.intro__text {
+    font-family: 'outfit', sans-serif;
+    color: var(--Wenge-Brown);
+    margin-bottom: 2em;
+}
+.box {
+    background-color: var(--Rose-White);
+    padding: 30px;
+    border-radius: 20px;
+    font-family: 'outfit', sans-serif;
+}
+.box h2 {
+    color: var(--Dark-Raspberry);
+}
+ul li {
+    margin-top: 0.8em;
+}
+section {
+    margin: 2em 0;
+}
+section h2 {
+    color: var(--Nutmeg);
+}
+section ul li {
+    color: var(--Nutmeg)
+}
+section ul li p {
+    color: var(--Wenge-Brown);
+}
+section ol li {
+    color: var(--Nutmeg);
+}
+section ol li p {
+    color: var(--Wenge-Brown);
+}
+.table {
+    display: grid;
+}
+.table div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.section__three .values {
+    color: var(--Nutmeg);
+    font-weight: 600;
+}
+.line {
+    border-bottom: 1.8px solid #777;
+}
+.attribution {
+    text-align: center;
+}
+
+@media (min-width: 630px) {
+    body {
+        background-color: var(--Eggshell);
+    }
+    .wrapper {
+        background-color: var(--White);
+        width: 85%;
+        margin: 100px auto;
+        max-width: 500px;
+        padding: 30px;
+        border-radius: 20px;
+    }
+    .container {
+        width: 100%;
+    }
+    .recipe-img {
+        border-radius: 20px;
+    }
+    
+}
+
